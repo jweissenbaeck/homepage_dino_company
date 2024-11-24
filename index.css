@@ -1,1 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+* {
+    font-family: 'Outfit', sans-serif; /* Achte auf den richtigen Font */
+    background-color: #FFB0B0;
+}
+
+/* Flexbox für die Navbar */
+.navbar-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+    margin: 0 1.5rem;
+    padding: 10px 0;
+    overflow: hidden; /* Verhindert, dass die Navbar überläuft */
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: nowrap; /* Verhindert, dass die Links umbrechen */
+    margin-left: auto; /* Entfernt zusätzlichen Abstand */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Verhindert, dass das Logo schrumpft */
+}
+
+/* Navbar Links */
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem; /* Standard Schriftgröße */
+    flex-shrink: 1; /* Links können schrumpfen, wenn der Platz eng wird */
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    /* Wenn der Bildschirm kleiner als 768px wird (z.B. Handys), schrumpfen die Elemente */
+    
+    .navbar-logo {
+        font-size: 1.2rem; /* Kleinere Schriftgröße für das Logo */
+    }
+
+    .navbar-links {
+        gap: 10px; /* Weniger Abstand zwischen den Links */
+    }
+
+    .navbar-links a {
+        font-size: 0.9rem; /* Kleinere Schriftgröße für die Links */
+    }
+
+    .navbar-flex-container {
+        padding: 5px 0; /* Weniger Abstand oben und unten */
+        overflow-x: auto; /* Horizontalen Scrollbalken anzeigen, wenn nötig */
+    }
+}

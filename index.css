@@ -26,7 +26,7 @@ body {
   left: 0;
   right: 0;
   background-color: #FFB0B0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .nav-logo {
@@ -80,6 +80,7 @@ body {
   margin-top: 2em;
   padding: 5em 10% 5em 10%;
   gap: 10em;
+  height: 100vh;
 }
 
 .left-container {
@@ -209,3 +210,33 @@ body {
   width: 50%; /* Passt die Breite des Bildes an den Container an */
   height: auto; /* Beibehaltung des Seitenverhältnisses */
 }
+
+  /* Footer */
+  .footer {
+    background-color: #810B0B; /* Dunkelrot */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 12%;
+    margin-top: 2em;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .footer-left a,
+  .footer-right p {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-left a {
+    margin-right: 4em;
+  }
+  
+  .footer-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }

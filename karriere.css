@@ -1,0 +1,162 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
+  
+  body {
+    background-color: #FFB0B0;
+    padding-top: 5rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.7em 12%;
+    box-shadow: 0 0.2px 10px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFB0B0;
+    z-index: 2;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: auto;
+    color: #810B0B;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-size: 1.1rem;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s;
+  }
+  
+  .nav-list a:hover {
+    color: #810B0B;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: row;
+      gap: 1rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-basis: calc(50% - 20px);
+    }
+  
+    .nav-list a {
+      padding: 10px 0;
+    }
+  }
+
+.career-page {
+    background-color: #FFB0B0;
+    padding: 4em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .career-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+  }
+  
+  .career-black {
+    color: #000; /* Schwarz */
+  }
+  
+  .career-red {
+    color: #810B0B; /* Dunkelrot */
+  }
+  
+  .career-content {
+    margin-top: 3em;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .career-item {
+    margin-bottom: 2em;
+  }
+  
+  .career-item h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #810B0B; /* Dunkelrot */
+    margin-bottom: 1em;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .career-item ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    font-family: 'Tiro Bangla', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .career-footer {
+    margin-top: 3em;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .career-footer a {
+    text-decoration: none;
+    color: #810B0B;
+  }
+  
+  .career-footer a:hover {
+    color: #000;
+  }
+
+  /* Footer */
+.footer {
+    background-color: #810B0B; /* Dunkelrot */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 12%;
+    margin-top: 2em;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .footer-left a,
+  .footer-right p {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-left a {
+    margin-right: 4em;
+  }
+  
+  .footer-left a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  
